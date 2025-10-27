@@ -1,0 +1,41 @@
+## Definition
+
+- SQL query optimization involves refining queries and database design to improve performance, reduce execution time, and minimize resource consumption. 
+- The goal is to ensure queries run efficiently, especially as data volume grows or system load increases.
+## Key techniques
+
+- **Use Indexes Effectively**
+    - Index columns that are frequently used in WHERE, JOIN, and ORDER BY clauses to speed up data lookups.
+    - Avoid excessive indexing, which can slow down write operations.
+- **Avoid SELECT ***
+    - Retrieve only the columns you need, not all columns with SELECT *.
+    - This reduces data transfer and processing overhead.
+- **Optimize WHERE Clauses**
+    - Prefer WHERE over HAVING when filtering data, as WHERE filters before grouping, speeding query processing.
+    - Use indexed columns in WHERE conditions and avoid applying functions on indexed fields, which can negate index usage.
+- **Efficient Joins**
+    - Use the right type of JOIN (e.g., INNER JOIN is usually faster than LEFT JOIN).
+    - Ensure joined columns are indexed, and always use explicit join conditions to prevent cartesian products.
+- **Limit Retrieved Rows**
+    - Use LIMIT or TOP clauses to restrict the number of rows, especially for validation or reporting queries.
+    - Pagination also reduces resource usage.
+- **Avoid Unnecessary Subqueries and Nested Queries**
+    - Replace subqueries with joins when appropriate, and avoid running queries inside application-level loops.
+- **Update and Maintain Statistics**
+    - Up-to-date table and index statistics help the SQL optimizer choose the best execution plan.
+- **Analyze Query Execution Plans**
+    - Use tools like EXPLAIN (MySQL, PostgreSQL) to understand how queries are executed and identify bottlenecks.
+- **Partition Large Tables**
+    - Partitioning and sharding split large datasets, allowing the optimizer to scan only relevant data.
+- **Query Caching**
+    - Cache the results of frequent queries at the database or application level to reduce repeated processing.
+- **Avoid SELECT DISTINCT and Redundant Data Retrieval**
+    - Only use DISTINCT if needed, as it adds sorting overhead.
+    - Fetch only necessary rows and columns.
+- **Normalize and Denormalize as Needed**
+    - Normalize to reduce redundancy;
+    - denormalize judiciously to reduce the number of joins for frequently accessed data.
+- **Monitor and Refactor Regularly**
+    - Profile query performance, monitor database metrics, and tune queries and indexes based on observed bottlenecks.
+- **Use Database-Specific Optimization Features**
+    - Modern databases provide optimizer hints, materialized views, and parallelism settings that can be leveraged for complex workloads.
