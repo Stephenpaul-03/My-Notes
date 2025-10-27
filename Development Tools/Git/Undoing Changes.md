@@ -1,7 +1,5 @@
-### Definition
+## Definition
 Undoing changes in Git depends on *what stage* your changes are in—working directory, staging area, committed, or pushed—and *what you’re trying to do*: rollback, reset, discard, or amend. Git gives you different tools for each of these situations.
-
----
 
 ## Change States
 | State                    | Description                           |
@@ -10,8 +8,6 @@ Undoing changes in Git depends on *what stage* your changes are in—working dir
 | **Staging Area (Index)** | Files marked for the next commit      |
 | **Repository (Commits)** | Snapshots saved in commit history     |
 | **Remote**               | Commits pushed to a shared repository |
-
----
 
 ## Undoing Uncommitted Changes
 
@@ -23,8 +19,6 @@ git restore <file>
 
 Effect: Discards file edits since the last commit.
 
----
-
 ### 2. Undo changes in staging area
 
 Unstage a file but keep its content:
@@ -35,7 +29,6 @@ git restore --staged <file>
 
 Effect: Removes from staging but keeps the local modifications.
 
----
 
 ### 3. Discard all unstaged changes
 
@@ -45,7 +38,6 @@ git restore .
 
 Effect: Resets all modified files to match the last commit.
 
----
 
 ## Undoing Commits (Local Only)
 
@@ -59,7 +51,6 @@ git commit --amend
 
 Effect: Rewrites the previous commit.
 
----
 
 ### 5. Reset to a previous commit
 
@@ -86,7 +77,6 @@ git reset --hard <commit>
 
 Tip: Use `git log` or `git reflog` to find the commit hash.
 
----
 
 ## Undoing Pushed Commits
 
@@ -100,8 +90,6 @@ git revert <commit>
 
 Effect: Keeps history clean and auditable. Use this for shared branches.
 
----
-
 ### 7. Force push after local reset _(use with caution)_
 
 ```shell
@@ -110,8 +98,6 @@ git push --force
 ```
 
 Effect: Overwrites remote history. Only do this if you’re working on a private branch or have team approval.
-
----
 
 ## Advanced: Recover Lost Commits
 

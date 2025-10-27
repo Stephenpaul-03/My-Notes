@@ -1,17 +1,13 @@
-### Definition
+## Definition
 `git rebase` is a **powerful Git command** that **reapplies commits on top of another base**, creating a **linear and cleaner project history**. It’s heavily used in **trunk-based** or **GitFlow** workflows to maintain a tidy commit log.
 
----
-
-### Working
+## Working
 Rebasing essentially **moves a branch’s commits** to start from a new base commit. This means:
 - Integrating changes from another branch.
 - Cleaning up commit history before merging.
 - Avoiding unnecessary merge commits that clutter logs.
 
----
-
-### Basic Syntax
+## Basic Syntax
 ```shell
 git rebase <base-branch>
 ````
@@ -19,9 +15,7 @@ git rebase <base-branch>
 Tells Git:  
 “Take my current branch and replay its commits on top of `<base-branch>`.”
 
----
-
-### Example Workflow
+## Example Workflow
 
 You’re working on a feature branch `feature/login` based on `main`:
 
@@ -34,9 +28,7 @@ git rebase main
 
 This reapplies your `feature/login` commits as if they were created after the latest commit in `main`.
 
----
-
-### Reasons
+## Reasons
 
 | Benefit                  | Impact                                                                |
 | :----------------------- | :-------------------------------------------------------------------- |
@@ -44,19 +36,14 @@ This reapplies your `feature/login` commits as if they were created after the la
 | **Conflict Management**  | Handle conflicts once during rebase instead of multiple merge points. |
 | **Better Collaboration** | Prevents diverging commit histories between teammates.                |
 
----
-
-### Risks
+## Risks
 
 | Concern                      | Explanation                                                                     |
 | :--------------------------- | :------------------------------------------------------------------------------ |
 | **Rewriting Public History** | Never rebase commits already pushed to shared branches unless your team agrees. |
 | **Complex Conflicts**        | May need to resolve conflicts for each commit during rebase.                    |
 | **Loss of Context**          | Hides the true chronological order of how commits were originally made.         |
-
----
-
-### Best Practices
+## Best Practices
 
 - Rebase **locally** and **before merging** to main/trunk.
 - Use **interactive rebase** to curate and clean your commits.
@@ -66,13 +53,9 @@ This reapplies your `feature/login` commits as if they were created after the la
 git pull --rebase
 ```
 
----
-
 ## Interactive Rebase
 
 Interactive rebase (`-i`) lets you **manually rewrite or reorder commits** to make your history cleaner and more meaningful before merging.
-
----
 
 ### Basic Command
 
@@ -82,8 +65,6 @@ git rebase -i HEAD~N
 
 - `HEAD~N` = last N commits in your branch.
 - Opens a text editor showing your recent commits.
-
----
 
 ### Interactive Rebase Editor Example
 
@@ -102,9 +83,7 @@ pick 789ghi3 Fix typo in login message
 | `fixup`  | Combine this commit with the previous one but discard its message. |
 | `drop`   | Remove the commit entirely.                                        |
 
----
-
-### Execution Flow
+## Execution Flow
 
 1. Run:
 ```shell
@@ -126,9 +105,7 @@ git add <resolved-files>
 git rebase --continue
 ```
 
----
-
-### Caution
+## Caution
 
 - Avoid rebasing **publicly shared commits** unless force-push is allowed.
 - Verify rewritten history with:

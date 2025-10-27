@@ -1,5 +1,5 @@
 
-| **Command**       | **Description**                               | **Common Flags / Options**                                                                                                                                                                       |
+| **Commands**       | **Description**                               | **Common Flags / Options**                                                                                                                                                                       |
 | ----------------- | --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `git init`        | Initialize a new Git repository               | `--bare`: Create a repository without working directory                                                                                                                                          |
 | `git clone`       | Clone a repository                            | `--depth <n>`: Shallow clone  <br>`--branch <name>`: Specific branch                                                                                                                             |

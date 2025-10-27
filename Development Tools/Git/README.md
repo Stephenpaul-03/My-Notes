@@ -1,12 +1,10 @@
-# Git Notes
+# Git
 
 ## Overview
 **Git** is a distributed version control system that helps developers track changes, collaborate on code, and manage project versions efficiently. It records snapshots of your codebase, allowing you to roll back, branch off, and merge work seamlessly.  
 Think of Git as your project’s **time machine + collaboration tool** , letting you experiment safely without losing progress.
 
-On a scale of **1–10**, these notes are about a **9/10** in coverage. They don’t go into the internals of Git plumbing commands, but they’re comprehensive enough for solid real-world usage and intermediate-level mastery.
-
----
+On a scale of **1–10**, these notes are about a **7/10** in coverage. They don’t go into the internals of Git plumbing commands, but they’re comprehensive enough for solid real-world usage and intermediate-level mastery.
 
 ## Recommended Reading Order
 Follow this sequence for the best understanding of Git concepts:

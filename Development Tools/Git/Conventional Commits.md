@@ -1,18 +1,16 @@
-### Common Rules
+## Common Rules
 - Short, imperative, and lowercase.
 - Avoid vague descriptions like "update code" or "changes made".
 - Keep types consistent across team/projects.
 
----
-### Format
+## Format
 ```
 <type>[optional scope][!]: <short description>  
 [optional body]  
 [optional footer(s)]
 ```
 
----
-### Types of Commits
+## Types of Commits
 | Type       | Purpose                                           |
 | :--------- | :------------------------------------------------ |
 | `feat`     | Introduces a new feature (**MINOR** version bump) |
@@ -26,14 +24,12 @@
 | `ci`       | Changes to CI/CD pipelines                        |
 | `build`    | Changes that affect the build system              |
 
----
-### Scopes
+## Scopes
 **Scope** is an optional identifier placed in parentheses after the commit `type` to clarify the area of the codebase the change affects.
 - Format: `<type>(<scope>): <description>`
 - Example: `feat(auth): implement login with JWT`
 
----
-### Breaking Changes
+## Breaking Changes
 **Breaking changes** are modifications that:
 - Break backward compatibility
 - Require users to modify their usage of the code (API, behavior, config, etc.)

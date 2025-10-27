@@ -1,16 +1,12 @@
 ## Definition
 **Git** is a **distributed version control system (DVCS)** used to track and manage changes in source code. It helps developers **collaborate**, **experiment safely**, and **recover past versions** of their projects — all without stepping on each other’s toes.
 
----
-
 ## Uses
 - Tracks every change made to the codebase.  
 - Enables multiple developers to work simultaneously.  
 - Supports branching for experimentation and feature development.  
 - Allows rollback to any previous state.  
 - Fast, lightweight, and completely open source.
-
----
 
 ## Core Terminologies
 | Term                     | Meaning                                       | Analogy                                            |
@@ -35,8 +31,6 @@
 | **Tag**                  | Label a specific commit (often for releases). | A **sticky note** marking version 1.0.             |
 | **Cherry-pick**          | Apply a specific commit from another branch.  | **Copy-paste** a change between timelines.         |
 | **Bisect**               | Finds the commit that introduced a bug.       | **Binary search** for the problem’s origin.        |
-
----
 
 ## Workflow Basics
 

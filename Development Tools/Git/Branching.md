@@ -1,14 +1,11 @@
+## Definition
 Branching in Git is a core concept that enables parallel development, experimentation, and risk isolation.  
 It is the foundational mechanism through which teams and individuals can implement features, fix bugs, refactor code, and manage releases without interfering with the main codebase.
-
----
 ## Explanation
 A **branch** in Git is essentially a movable pointer to a commit. Think of it as a snapshot line of development.
 
-Analogy:  
+### Analogy:  
 Imagine you're writing a novel. You have a published version (main branch), but you want to experiment with a different ending (feature branch). Instead of changing the published version, you take a photocopy of the last page and start writing from there. If it works, you can publish it. If not, discard it , your original is untouched.
-
----
 ## Key Branch Types
 
 ### 1. Main Branch
@@ -49,8 +46,6 @@ Think of it as: A QA staging area ->a final checkpoint before deployment.
 - **Usage:** High-priority fixes; often bypasses regular feature-release flow.
 
 Think of it as: A fire extinguisher ->for emergencies only.
-
----
 ## Core Operations on Branches
 
 ### 1. Creating a Branch
@@ -91,13 +86,12 @@ git branch -d feature/new-ui
 
 Deletes the local branch after it's merged.
 
----
 ## Summary Table
 
-|Branch Type|Purpose|Created From|Merged Into|Lifetime|
-|:--|:--|:--|:--|:--|
-|`main`|Production-ready code|-|-|Permanent|
-|`feature/*`|New feature development|`develop`|`develop`|Short-lived|
-|`bugfix/*`|Fix non-critical bugs|`develop`|`develop`|Short-lived|
-|`release/*`|Prepare for release|`develop`|`main`, `develop`|Temporary|
-|`hotfix/*`|Urgent fix to production|`main`|`main`, `develop`|Temporary|
+| Branch Type | Purpose                  | Created From | Merged Into       | Lifetime    |
+| :---------- | :----------------------- | :----------- | :---------------- | :---------- |
+| `main`      | Production-ready code    | -            | -                 | Permanent   |
+| `feature/*` | New feature development  | `develop`    | `develop`         | Short-lived |
+| `bugfix/*`  | Fix non-critical bugs    | `develop`    | `develop`         | Short-lived |
+| `release/*` | Prepare for release      | `develop`    | `main`, `develop` | Temporary   |
+| `hotfix/*`  | Urgent fix to production | `main`       | `main`, `develop` | Temporary   |
