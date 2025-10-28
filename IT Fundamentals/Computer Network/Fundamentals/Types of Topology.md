@@ -4,7 +4,7 @@
 
 ## **# Point To Point Topology**
 
-![image.png](image%209.png)
+![image.png](image9.png)
 
 - **Definition:** Direct communication link between exactly two nodes, where one node acts as the sender and the other as the receiver.
 - **Advantages:**
@@ -18,7 +18,7 @@
 
 ## **# Mesh Topology**
 
-![image.png](image%2010.png)
+![image.png](image10.png)
 
 - **Definition:** Every device is interconnected with every other device via dedicated communication links.
 - **Advantages:**
@@ -37,7 +37,7 @@
 
 ## **# Star Topology**
 
-![image.png](image%2011.png)
+![image.png](image11.png)
 
 - **Definition:** All devices are connected to a single central hub or switch. The hub acts as a repeater to facilitate communication.
 - **Advantages:**
@@ -52,7 +52,7 @@
 
 ## **# Bus Topology**
 
-![image.png](image%2012.png)
+![image.png](image12.png)
 
 - **Definition:** All nodes are connected to a single shared communication line (backbone).
 - **Advantages:**
@@ -67,7 +67,7 @@
 
 ## **# Ring Topology**
 
-![image.png](image%2013.png)
+![image.png](image13.png)
 
 - **Definition:** Devices are connected in a circular fashion, with each node connected to exactly two neighbors. Data travels in one direction (unidirectional).
 - **Advantages:**
@@ -82,7 +82,7 @@
 
 ## **# Tree Topology**
 
-![image.png](image%2014.png)
+![image.png](image14.png)
 
 - **Definition:** A hierarchical topology combining characteristics of star and bus topologies. Multiple star-configured networks are connected to a linear bus backbone.
 - **Advantages:**
@@ -96,7 +96,7 @@
 
 ## **# Hybrid Topology**
 
-![image.png](image%2015.png)
+![image.png](image15.png)
 
 - **Disadvantages:**
     - Design and implementation complexity.

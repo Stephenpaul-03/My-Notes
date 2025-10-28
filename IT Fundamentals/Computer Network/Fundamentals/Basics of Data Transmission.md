@@ -1,4 +1,4 @@
-## **Defintion**
+## **Definition**
 
 - **Data transmission** refers to the process of sending digital or analog data over a communication medium from one device (sender) to another (receiver).
 - It underpins all forms of networking and telecommunications, whether wired or wireless.

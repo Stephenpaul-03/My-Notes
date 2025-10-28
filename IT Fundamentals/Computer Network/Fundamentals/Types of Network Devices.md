@@ -18,9 +18,10 @@
     - Modern NICs support high-speed transmission (up to 10 Gbps+).
 - **Disadvantages:**
     - Limited by hardware speed and bus architecture (PCIe, USB, etc.).
+
 ## **# 2. Switch **
 
-![image.png](image%201.png)
+![image.png](image1.png)
 
 - **Definition:** A multi-port network device that connects multiple devices in a LAN and operates at Layer 2 (Data Link Layer) of the OSI model.
 - **Function:**
@@ -33,9 +34,10 @@
 - **Disadvantages:**
     - Does not handle traffic between different networks.
     - Can become a bottleneck without proper configuration.
+
 ## **# 3. Router**
 
-![image.png](image%202.png)
+![image.png](image2.png)
 
 - **Definition:** A Layer 3 (Network Layer) device that connects different networks together and routes packets based on IP addresses.
 - **Function:**
@@ -48,9 +50,10 @@
 - **Disadvantages:**
     - More expensive and complex than switches.
     - May require configuration for advanced features.
+
 ## **# 4. Hub**
 
-![image.png](image%203.png)
+![image.png](image3.png)
 
 - **Definition:** A basic, outdated networking device that broadcasts incoming data to all connected devices.
 - **Function:**
@@ -62,9 +65,10 @@
     - Causes network collisions.
     - Inefficient bandwidth usage due to data flooding.
     - Largely replaced by switches.
+
 ## **# 5. Modem**
 
-![image.png](image%204.png)
+![image.png](image4.png)
 
 - **Definition:** A device that modulates and demodulates analog signals to enable digital data transmission over telephone or cable lines.
 - **Function:**
@@ -76,9 +80,10 @@
 - **Disadvantages:**
     - Not sufficient for internal LAN connectivity.
     - Requires ISP configuration.
+
 ## **# 6. Access Point (AP)**
 
-![image.png](image%205.png)
+![image.png](image5.png)
 
 - **Definition:** A device that allows wireless devices to connect to a wired network using Wi-Fi.
 - **Function:**
@@ -90,9 +95,10 @@
 - **Disadvantages:**
     - Limited range and bandwidth.
     - Requires proper placement to avoid dead zones.
+
 ## **# 7. Repeater**
 
-![image.png](image%206.png)
+![image.png](image6.png)
 
 - **Definition:** A device that amplifies or regenerates signals to extend network range.
 - **Function:**
@@ -103,9 +109,10 @@
 - **Disadvantages:**
     - Can introduce latency.
     - Does not filter or manage traffic.
+
 ## **# 8. Bridge**
 
-![image.png](image%207.png)
+![image.png](image7.png)
 
 - **Definition:** A Layer 2 device used to divide a large network into smaller segments or to connect two LANs.
 - **Function:**
@@ -116,9 +123,10 @@
 - **Disadvantages:**
     - Limited scalability.
     - Replaced by modern switches in most environments.
+
 ## **# 9. Gateway**
 
-![image.png](image%208.png)
+![image.png](image8.png)
 
 - **Definition:** A device that connects networks using different protocols, operating at any OSI layer depending on function.
 - **Function:**

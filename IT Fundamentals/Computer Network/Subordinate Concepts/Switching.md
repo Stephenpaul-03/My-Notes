@@ -29,7 +29,7 @@
 
 ### **Circuit Switching**
 
-![CircuitSwitching.png](.png)
+![CircuitSwitching.png](img1.png)
 
 #### **# Concept**
 
@@ -66,7 +66,7 @@
 
 Packet switching is the **foundation of modern data communication** and is used in the Internet and virtually all modern networks.
 
-![image.png](image%2016.png)
+![image.png](img1.png)
 
 
 #### **Datagram Packet Switching**
@@ -123,7 +123,7 @@ Establishes a **logical connection** before packet transmission. All packets fol
 
 ### **Message Switching**
 
-![image.png](image%2017.png)
+![image.png](img2.png)
 
 #### **# Concept**
 
