@@ -1,0 +1,60 @@
+## **# a) Error Detection Techniques**
+
+- **Parity Bit**
+    - **Working**
+        - A single **bit is added** to the data to make the **number of 1s either even (even parity)** or **odd (odd parity)**.
+        - At the receiver, the parity is recalculated. If it doesn’t match, an error is detected.
+    - **Advantage**
+        - Very simple and low overhead.
+    - **Disadvantage**
+        - Can only detect **single-bit errors**; fails with **even-numbered bit errors**.
+- **Checksum**
+    - **Working**
+        - Data is divided into equal segments (e.g., 16-bit words).
+        - All segments are **added together**, and the sum is appended to the packet.
+        - The receiver **recomputes the checksum** and compares it with the received one.
+    - **Advantage**
+        - Detects most common errors.
+    - Disadvantge
+        - Vulnerable to **bit order changes** or **cancelling errors**.
+- **Cyclic Redundancy Check (CRC)**
+    - **Working**
+        - Treats the entire data block as a **binary polynomial**.
+        - Divides it by a predefined **generator polynomial** using modulo-2 division.
+        - Appends the **remainder (CRC bits)** to the data.
+        - Receiver divides received block with the same polynomial — if remainder is non-zero, an error is detected.
+    - **Advantage**
+        - **Highly accurate**, used in Ethernet, disk storage, etc.
+    - **Disadvantage**
+        - Cannot correct errors, only detect.
+
+## **# b) Error Correction Techniques**
+
+- **Hamming Code**
+    - **Working**
+        - Adds **multiple parity bits** at positions based on powers of 2.
+        - Each parity bit covers specific positions.
+        - On error, the receiver calculates the **syndrome** (error location).
+        - Single-bit error is **identified and corrected automatically**.
+    - **Advantage**
+        - Corrects **single-bit errors** and detects **two-bit errors**.
+    - **Disadvantage**
+        - Overhead increases with message length.
+- **Reed-Solomon**
+    - **Working**
+        - Encodes data as a polynomial over a finite field.
+        - Adds **redundant data** so that a certain number of errors can be corrected.
+        - Decoding uses **algebraic techniques** to correct multiple errors.
+    - **Advantages**
+        - Corrects **burst errors**.
+        - Used in **CDs, DVDs, QR codes, satellite communication**.
+    - **Disadvantages**
+        - **Computationally intensive** and complex.
+- **Forward Error Correction (FEC)**
+    - **Working**
+        - Sender encodes data with redundancy bits using **error-correcting code**.
+        - Receiver can **correct errors without retransmission**.
+    - **Advantage**
+        - **No need for acknowledgment** or retransmission (ideal for real-time systems).
+    - **Disadvantage**
+        - Higher bandwidth usage due to redundancy.

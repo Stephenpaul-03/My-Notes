@@ -1,0 +1,44 @@
+## **Terminologies**
+
+- **Network**
+    - A system of interconnected computers and devices that share resources, data, and applications.
+- **Nodes**
+    - Any physical or logical device (e.g., computers, switches, routers) that participates in the network.
+- **Protocol**
+    - A defined set of rules for data communication. Examples include TCP/IP, HTTP, FTP, etc.
+- **Topology**
+    - (already have this covered in separate notes.)
+- **IP Address**
+    - A unique identifier for a device on a network, used for locating and communicating with other nodes.
+        - **IPv4**: 32-bit address format (e.g., 192.168.1.1)
+        - **IPv6**: 128-bit address format, designed to replace IPv4 due to address exhaustion.
+- **DNS (Domain Name System)**
+    - Resolves domain names (e.g., [www.microsoft.com](http://www.microsoft.com/)) to IP addresses. Acts like the “phonebook” of the internet.
+- **Firewall**
+    - A hardware or software-based security system that filters network traffic based on predefined rules.
+- **MAC Address (Media Access Control Address)**
+    - A hardware address assigned to a network interface card (NIC) that uniquely identifies a device at the data link layer.
+    - Format: `00:1B:44:11:3A:B7`
+- **Router**
+    - A device that routes data from one network to another based on IP addresses.
+    - Operates at Layer 3 of the OSI model.
+- **Switch**
+    - A Layer 2 device that connects multiple devices in a LAN and uses MAC addresses to forward data to the correct destination.
+- **Bandwidth**
+    - The maximum rate of data transfer across a network path, typically measured in Mbps or Gbps.
+- **Latency**
+    - The delay in data transmission over the network. A key performance metric for real-time systems.
+- **Packet**
+    - The fundamental unit of data transmitted over a network. Includes headers (with metadata) and payload (actual data).
+- **Gateway**
+    - A network node that acts as an access point to another network, typically connecting internal networks to external ones (e.g., internet).
+- **NAT (Network Address Translation)**
+    - A method used by routers to map multiple private IP addresses to a single public IP address. Optimizes IP address usage and provides a layer of security.
+- **Subnet**
+    - A segmented piece of a larger network. Subnetting enhances routing efficiency and improves network management.
+- **VPN (Virtual Private Network)**
+    - Creates a secure tunnel over a public network, allowing private data transmission and remote access to internal resources.
+- **HTTP/HTTPS**
+    - Protocols used for web communication.
+        - **HTTP**: Unsecured
+        - **HTTPS**: Secure (uses SSL/TLS)
